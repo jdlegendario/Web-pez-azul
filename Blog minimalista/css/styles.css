@@ -1,0 +1,77 @@
+/*Estilos generales*/
+body {
+    font-family: 'Sora', sans-serif;
+    margin: 0%; /*elimino margenes por defecto*/
+    line-height: 1.6; /*interlineado como para la lectura*/
+    color: #333; /*color de texto oscuro*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*estilos para el cuerpo del texto*/
+body p {
+    font-size: 1rem; /*tama;o de fuente legible*/
+    line-height: 1.5; /*ajusta el interlineado para mejorar la legibilidad*/
+}
+
+
+/* Estilo general de la tarjeta */
+.blog-card {
+    font-family: 'Sora', sans-serif;
+    width: 350px; /* ancho de la tarjeta */
+    border: 1px solid #ccc; /* borde gris claro */
+    border-radius: 8px; /* bordes redondeados */
+    overflow: hidden; /* ocultar el desbordamiento de la imagen */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /*sombra sutil*/
+}
+
+/* Imagen de la tarjeta */ 
+.blog-card-image {
+    width: 100%;
+    height: 250px; /*altura de la imagen*/
+    object-fit: cover; /*ajustar la imagen para cubrir el contenedor*/
+}
+
+/*Contenido de la tarjeta*/
+.blog-card-content {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.blog-card-title {
+    font-family: 'Sora', sans-serif;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 1.125rem;
+    margin-left: 8px;
+    
+}
+
+.blog-card-description {
+    margin-bottom: 20px; /*Espacio de 20px entre parrafos*/ 
+    line-height: 1.2rem;
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 0.875rem;
+}
+ 
+.blog-card-tag {
+    
+    color: rgb(5, 5, 5);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+}
+
+.p {
+    line-height: 2.0;
+}
+
+.tag-separator {
+    border: none; /*quitar el borde, por defecto*/
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
