@@ -1,0 +1,171 @@
+/* General Styles */
+:root {
+  --primary-color: #007bff; /* Azul principal */
+  --secondary-color: #f8f9fa; /* Beige claro */
+  --accent-color: #ffc107; /* Amarillo para resaltar */
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display' serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px 0;
+  ;
+
+}
+
+.header-logo {
+  width: 80px;
+  height: auto;
+}
+
+.title-link {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/restaurant.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  background: linear-gradient(to bottom, #007bff, #0056b3); 
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  background-color: white;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sections (Menú, Restaurante, Nosotros, Contacto) */
+.section {
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Menú */
+#menu-section {
+  background-color: var(--secondary-color); 
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.category-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  background-color: #0056b3;
+}
+
+/* Items del Menú */
+.menu-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Galería (Asumiendo Bootstrap Carousel) */
+#galeria .carousel-item img {
+  max-width: 100%;
+  height: 400px; 
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+  .hero {
+      padding: 50px 0;
+  }
+  
+  .section {
+      padding: 20px;
+  }
+  
+  .gallery-item {
+      width: 100%; 
+      margin: 10px 0; 
+  }
+}

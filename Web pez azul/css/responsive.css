@@ -1,0 +1,13 @@
+/* Para móviles */
+@media (max-width: 767px) {
+    .menu-principal {
+      flex-direction: column;
+    }
+    .menu-principal a {
+      padding: 10px;
+    }
+    .galeria img {
+      width: 100%;
+    }
+  }
+  

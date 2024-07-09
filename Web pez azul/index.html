@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Pez Azul - Campeones Mundiales del Encebollado</title>
+    <meta name="description" content="Disfruta del mejor encebollado de la ciudad en El Pez Azul, campeones mundiales del encebollado en Esmeraldas 2017.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">  
+</head>
+<body>
+
+    <header class="container">
+        <div class="row align-items-center">
+            <div class="col-2">
+                <img src="images/logo.png" alt="El Pez Azul Logo" class="img-fluid header-logo">
+            </div>
+            <div class="col-8 text-center">
+                <h1><a href="index.html" class="title-link">El Pez Azul</a></h1>
+            </div>
+            <div class="col-2 text-end">
+                <button class="btn btn-primary" id="order-button">Ordenar</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content text-center">
+                <h1>Bienvenidos a El Pez Azul</h1>
+                <p>Campeones Mundiales del Encebollado en Esmeraldas 2017</p>
+            </div>
+        </section>
+
+        <section id="sobre-nosotros" class="section">
+            <h2>Sobre Nosotros</h2>
+            <p>En El Pez Azul, nos enorgullecemos de ofrecer el mejor encebollado de la ciudad. Ven y disfruta de nuestros platos únicos y deliciosos.</p>
+        </section>
+
+        <section id="menu-section" class="section">
+            <h2>Nuestro Menú</h2>
+            <div class="filtros">
+                <div id="menu-categories">
+                    <button class="category-btn active" data-category="all">Todo</button>
+                    <button class="category-btn" data-category="encebollados">Encebollados</button>
+                    <button class="category-btn" data-category="platos-principales">Platos Principales</button>
+                    <button class="category-btn" data-category="bebidas">Bebidas</button>
+                </div>
+            </div>
+            <div id="menu-items" class="row">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 El Pez Azul</p>
+    </footer>
+
+    <div class="modal fade" id="cart-modal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cart-items"></div>
+                    <div class="d-flex justify-content-between mt-3">
+                        <h5>Total:</h5>
+                        <h5 id="total-price">\$0.00</h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="place-order">Realizar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script> 
+</body>
+</html>
